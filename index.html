@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/Normalize.css">
+    <link rel="stylesheet" href="Css/project4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Lobster&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <title>Flix | Food</title>
+</head>
+
+<body>
+    <div class="full-body" id="blur">
+        <div class="header">
+            <div class="container">
+                <a class="logo" href="#"><img src="images/Logo.png" alt=""></a>
+                <ul class="main-nav">
+                    <li><a href="#main-dish">Main Menu</a></li>
+                    <li><a href="#vid">Reservations</a></li>
+                    <li><a href="#group-dining">Groub Dining</a></li>
+                    <li>
+                        <a href="">Other Services</a>
+                        <div class="mega-menue">
+                            <div class="image">
+                                <img src="images/mega.png" alt="">
+                            </div>
+                            <ul class="links">
+                                <li>
+                                    <a href="#our-team"><i class="far fa-user fa-fw" style="margin-right: 10px;"></i>
+                                        Our
+                                        Team
+                                        Meambers</a>
+                                </li>
+                                <li>
+                                    <a href="#testimonials"><i class="far fa-comments fa-fw" style="margin-right: 10px;"
+                                            style="margin-right: 10px;"></i> Testimonials</a>
+                                </li>
+                                <li>
+                                    <a href="#sevices"><i class="far fa-building fa-fw" style="margin-right: 10px;"></i>
+                                        Restaurant Services</a>
+                                </li>
+                                <li>
+                                    <a href="#our-story"><i class="fa-solid fa-book-open"
+                                            style="margin-right: 10px;"></i> Our Story</a>
+                                </li>
+                            </ul>
+                            <ul class="links">
+                                <li>
+                                    <a href="#events"><i class="far fa-calendar-alt fa-fw"
+                                            style="margin-right: 10px;"></i>
+                                        Events</a>
+                                </li>
+                                <li>
+                                    <a href="#order"><i class="fa-regular fa-motorcycle"
+                                            style="margin-right: 10px;"></i>
+                                        Order Online</a>
+                                </li>
+                                <li>
+                                    <a href="#meals"><i class="fas fa-utensils"
+                                            style="margin-right: 10px; font-weight: 900;"></i>
+                                        Top Meals</a>
+                                </li>
+                                <li>
+                                    <a href="#discount"><i class="fa-sharp fa-solid fa-dollar-sign"
+                                            style="margin-right: 10px;"></i>
+                                        Discounts</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Start Landing -->
+        <div class="landing">
+            <div class="container">
+                <div class="text">
+                    <h1>Flix Restaurant</h1>
+                    <p>The foundation for our menu is a vast collection of spices with a focus on sub-Saharan West
+                        Africa,
+                        which we have meticulously sourced over the past few years.</p>
+                </div>
+                <div class="image">
+                    <img src="images/l1.png" alt="" class="imgl1">
+                    <img src="images/l22.png" alt="" class="imgl2">
+                    <img src="images/l3.png" alt="" class="imgl3">
+                </div>
+            </div>
+            <a href="#vid"><i class="fa-solid fa-angles-down"></i></a>
+        </div>
+        <!-- End Landing -->
+        <!--Start Amazing vid -->
+        <div class="vid" id="vid">
+            <video loop autoplay muted>
+                <source src="images/food-vid1.mp4" type="video/mp4">
+            </video>
+            <div class="content">
+                <div class="box">
+                    <p>Are You Hungrey ?</p>
+                    <h1>Don't Wait !</h1>
+                    <p>Let start to order food now </p>
+                    <a href="#main-dish">Check Out Menu</a>
+                    <a href="#vid" class="reserv" onclick="toggle()">Reservations</a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function toggle() {
+                var blur = document.getElementById("blur");
+                blur.classList.toggle("active");
+                var popup = document.getElementById("popup");
+                popup.classList.toggle("active")
+            }
+        </script>
+        <!--End Amazing vid -->
+
+        <!-- Start Article -->
+        <div class="article" id="main-dish">
+            <div class="container">
+                <div class="main-titel">
+                    Main Dishes
+                </div>
+                <div class="main-dish">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="image fa-img1">
+                                <img src="images/food1.png" alt="">
+                                <p>15</p>
+                            </div>
+                            <div class="text">
+                                <h3>Food Name</h3>
+                                <p>The Most Delicious Thing You Eat This Week</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="image fa-img2">
+                                <img src="images/food 2.png" alt="">
+                                <p>16</p>
+                            </div>
+                            <div class="text">
+                                <h3>Food Name</h3>
+                                <p>The Most Delicious Thing You Eat This Week</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="image fa-img3">
+                                <img src="images/food 3.png" alt="">
+                                <p>30</p>
+                            </div>
+                            <div class="text">
+                                <h3>Food Name</h3>
+                                <p>The Most Delicious Thing You Eat This Week</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="image fa-img4">
+                                <img src="images/food 4.png" alt="">
+                                <p>20</p>
+                            </div>
+                            <div class="text">
+                                <h3>Food Name</h3>
+                                <p> The Most Delicious Thing You Eat This Week</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="image fa-img5">
+                                <img src="images/food 5.png" alt="">
+                                <p>24</p>
+                            </div>
+                            <div class="text">
+                                <h3>Food Name</h3>
+                                <p>The Most Delicious Thing You Eat This Week</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="image fa-img6">
+                                <img src="images/food 6.png" alt="">
+                                <p>18</p>
+                            </div>
+                            <div class="text">
+                                <h3>Food Name</h3>
+                                <p>The Most Delicious Thing You Eat This Week</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Article -->
+        <!-- Start Break image -->
+        <div class="break-quote" id="group-dining">
+            <div class="content">
+                <h2>Groub Dining</h2>
+                <p>Our restaurant offer a variety of private dining options.</p>
+            </div>
+            <img src="images/knife.png" alt="">
+        </div>
+        <!-- End Break image -->
+        <!-- Start Collection  -->
+        <div class="collection">
+            <div class="items">
+                <div class="item">
+                    <a href="">
+                        <div class="image">
+                            <img src="images/4.jpg" alt="">
+                        </div>
+                        <div class="item-info">
+                            <h2>Item Name</h2>
+                            <p>Our restaurant offer a variety of private dining options.</p>
+                        </div>
+                        <span class="span-1"></span>
+                        <span class="span-2"></span>
+                        <span class="span-3"></span>
+                        <span class="span-4"></span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <div class="image">
+                            <img src="images/3.jpg" alt="">
+                        </div>
+                        <div class="item-info">
+                            <h2>Item Name</h2>
+                            <p>Our restaurant offer a variety of private dining options.</p>
+                        </div>
+                    </a>
+                    <span class="span-1"></span>
+                    <span class="span-2"></span>
+                    <span class="span-3"></span>
+                    <span class="span-4"></span>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <div class="image">
+                            <img src="images/6.jpg" alt="">
+                        </div>
+                        <div class="item-info">
+                            <h2>Item Name</h2>
+                            <p>Our restaurant offer a variety of private dining options.</p>
+                        </div>
+                        <span class="span-1"></span>
+                        <span class="span-2"></span>
+                        <span class="span-3"></span>
+                        <span class="span-4"></span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <div class="image">
+                            <img src="images/5.jpg" alt="">
+                        </div>
+                        <div class="item-info">
+                            <h2>Item Name</h2>
+                            <p>Our restaurant offer a variety of private dining options.</p>
+                        </div>
+                        <span class="span-1"></span>
+                        <span class="span-2"></span>
+                        <span class="span-3"></span>
+                        <span class="span-4"></span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <div class="image">
+                            <img src="images/9.jpg" alt="">
+                        </div>
+                        <div class="item-info">
+                            <h2>Item Name</h2>
+                            <p>Our restaurant offer a variety of private dining options.</p>
+                        </div>
+                        <span class="span-1"></span>
+                        <span class="span-2"></span>
+                        <span class="span-3"></span>
+                        <span class="span-4"></span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <div class="image">
+                            <img src="images/7.jpg" alt="">
+                        </div>
+                        <div class="item-info">
+                            <h2>Item Name</h2>
+                            <p>Our restaurant offer a variety of private dining options.</p>
+                        </div>
+                        <span class="span-1"></span>
+                        <span class="span-2"></span>
+                        <span class="span-3"></span>
+                        <span class="span-4"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- End Collection -->
+        <!-- Start Our Team -->
+        <div class="our-team" id="our-team">
+            <div class="image fa-img1">
+                <img src="images/edge.png" alt="">
+            </div>
+            <div class="image">
+                <img class="img-2" src="images/basil-2.png" alt="basil">
+                <img class="img-1" src="images/basil-1.png" alt="basil">
+                <img class="img-3" src="images/basil-3.png" alt="basil">
+            </div>
+            <div class="container">
+                <div class="main-titel">
+                    Our Team
+                </div>
+                <div class="team">
+                    <div class="team-1">
+                        <div class="box">
+                            <img src="images/Ahmed.jpg" alt="The Creator">
+                            <div class="text">
+                                <p>"Design is not just what it looks like and feels like. Design is how it works."</p>
+                                <h3>Des | Ahmed Taha</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-2">
+                        <div class="box">
+                            <img src="images/avatar.png" alt="The Creator">
+                            <div class="text">
+                                <p>"Design is not just what it looks like and feels like. Design is how it works."</p>
+                                <h3>Des | Ahmed Taha</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-1">
+                        <div class="box">
+                            <img src="images/avatar-1.png" alt="The Creator">
+                            <div class="text">
+                                <p>"Design is not just what it looks like and feels like. Design is how it works."</p>
+                                <h3>Des | Ahmed Taha</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-2">
+                        <div class="box">
+                            <img src="images/avatar-2.png" alt="The Creator">
+                            <div class="text">
+                                <p>"Design is not just what it looks like and feels like. Design is how it works."</p>
+                                <h3>Des | Ahmed Taha</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Our Team -->
+        <!-- Start Footer -->
+        <footer>
+            <div class="container">
+                <div class="location">
+                    <img src="images/Logo.png" alt="">
+                    <p>location</p>
+                    <address>Egypt-Gharbia <br>zifta city <br>behind Abudawood Mosque </address>
+                </div>
+                <div class="follow-us">
+                    <p class="we-are">We are on</p>
+                    <div class="social">
+                        <a href="https://www.instagram.com/ahmedradwan_74/" target="_blank"><i
+                                class="fab fa-instagram-square"></i></a>
+                        <a href="https://www.facebook.com/A7medRadwan74/" target="_blank"><i
+                                class="fab fa-facebook-square"></i></a>
+                        <a href="https://twitter.com/AhmedRadwan0114" target="_blank"><i
+                                class="fab fa-twitter-square"></i></a>
+                    </div>
+                </div>
+                <div class="news">
+                    <p>NewSletter</p>
+                    <div class="mail">
+                        <input type="email:mezo12542@gmail.com" name="EMAIL" placeholder="Your Email" required>
+                        <button type="submit"><i class="far fa-long-arrow-alt-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bar">
+                <p class="copyright">&copy; 2022 - <span>Flix | Restaurant </span> All Right Reserved </p>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </div>
+    <!-- Strat Popup reserv -->
+    <div class="popup" id="popup">
+        <h3>Book Your Table Now</h3>
+        <form action="">
+            <img src="images/date-image.jpg" alt="">
+            <div class="form-content">
+                <h3>Reservations</h3>
+                <div class="seats">
+                    <select name="seat" id="seat" required>
+                        <option value="Number Of People">Number Of People</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5">5 People</option>
+                        <option value="6">6 People</option>
+                        <option value="7">7 People</option>
+                    </select>
+                </div>
+                <div class="date">
+                    <input type="date" name="date" required>
+                </div>
+                <div class=" time">
+                    <select name="time" id="time" required>
+                        <option value="Time">Time</option>
+                        <option value="11:00 PM">11:00 PM</option>
+                        <option value="10:30 PM">10:30 PM</option>
+                        <option value="10:00 PM">10:00 PM</option>
+                        <option value="9:30 PM">9:30 PM</option>
+                        <option value="9:00 PM">9:00 PM</option>
+                        <option value="8:30 PM">8:30 PM</option>
+                        <option value="8:00 PM">8:00 PM</option>
+                        <option value="7:30 PM">7:30 PM</option>
+                        <option value="7:00 PM">7:00 PM</option>
+                        <option value="6:30 PM">6:30 PM</option>
+                        <option value="6:00 PM">6:00 PM</option>
+                        <option value="5:30 PM">5:30 PM</option>
+                        <option value="5:00 PM">5:00 PM</option>
+                        <option value="4:30 PM">4:30 PM</option>
+                        <option value="4:00 PM">4:00 PM</option>
+                        <option value="3:30 PM">3:30 PM</option>
+                        <option value="3:00 PM">3:00 PM</option>
+                        <option value="2:30 PM">2:30 PM</option>
+                        <option value="2:00 PM">2:00 PM</option>
+                        <option value="1:30 PM">1:30 PM</option>
+                        <option value="1:00 PM">1:00 PM</option>
+                        <option value="12:30 PM">12:30 PM</option>
+                        <option value="12:00 PM">12:00 PM</option>
+                        <option value="11:30 AM">11:30 AM</option>
+                        <option value="11:00 AM">11:00 AM</option>
+                        <option value="10:30 AM">10:30 AM</option>
+                        <option value="10:00 AM">10:00 AM</option>
+                        <option value="9:30 AM">9:30 AM</option>
+                        <option value="9:00 AM">9:00 AM</option>
+                        <option value="8:30 AM">8:30 AM</option>
+                        <option value="8:00 AM">8:00 AM</option>
+                    </select>
+                    <a href="#vid" onclick="toggle()">Find A Table</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- End Popup reserv -->
+</body>
+
+</html>
